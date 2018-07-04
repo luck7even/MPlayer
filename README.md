@@ -20,4 +20,4 @@ Requires Android 2.3 or under
 - Sort songs by date added
 
 # Screenshot
-![screenshot.png]/
+![screenshot.png](./screenshot.png)
