@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="sleep_time">
+		<item>끔</item>
+		<item>30분</item>
+		<item>1시간</item>
+		<item>2시간</item>
+		<item>3시간</item>
+	</string-array>
+	<string-array name="sleepValues_time">
+		<item>0</item>
+		<item>30</item>
+		<item>60</item>
+		<item>120</item>
+		<item>180</item>
+	</string-array>
+	<string-array name="eq">
+		<item>끔</item>
+		<item>Acoustic</item>
+		<item>Bass Amplifier</item>
+		<item>Bass Reducer</item>
+		<item>Classical</item>
+		<item>Dance</item>
+		<item>Deep</item>
+		<item>Electronic</item>
+		<item>Flat</item>
+		<item>Hip Hop</item>
+		<item>Jazz</item>
+		<item>Latin</item>
+		<item>Loudness</item>
+		<item>Lounge</item>
+		<item>Piano</item>
+		<item>Pop</item>
+		<item>R&amp;B</item>
+		<item>Rock</item>
+		<item>Small Speakers</item>
+		<item>Spoken Work</item>
+		<item>Treble Booster</item>
+		<item>Treble Reducer</item>
+		<item>Vocal Booster</item>
+	</string-array>
+	<string-array name="eq_value">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+		<item>17</item>
+		<item>18</item>
+		<item>19</item>
+		<item>20</item>
+		<item>21</item>
+		<item>22</item>
+	</string-array>
+</resources>
