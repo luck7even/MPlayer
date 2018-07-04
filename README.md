@@ -20,4 +20,4 @@ Requires Android 2.3 or under
 - Sort songs by date added
 
 # Screenshot
-[https://github.com/luck7even/MPlayer/blob/master/screenshot.png]
+![screenshot.png]/
