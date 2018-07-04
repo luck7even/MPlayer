@@ -1,0 +1,62 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:okCancelBar="http://schemas.android.com/apk/res/com.MP3Player"
+	android:layout_height="wrap_content" android:layout_width="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/main">
+		<RelativeLayout android:paddingTop="5px" android:id="@+id/title"
+			android:layout_width="match_parent" android:orientation="vertical"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true">
+			<ImageButton android:id="@+id/mp3Tapmode" android:layout_width="wrap_content"
+				android:src="@drawable/arrowleft" android:layout_height="wrap_content"
+				android:background="#a0000000" android:layout_marginLeft="5px"></ImageButton>
+			<TextView android:layout_width="wrap_content" android:id="@+id/subject"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:singleLine="true" android:layout_centerInParent="true"
+				android:layout_marginLeft="40px" android:layout_marginRight="40px"></TextView>
+			<ImageButton android:src="@drawable/playlist"
+				android:layout_height="wrap_content" android:id="@+id/playlist"
+				android:background="#a0000000" android:layout_width="wrap_content"
+				android:layout_alignParentRight="true" android:layout_marginRight="5px"></ImageButton>
+		</RelativeLayout>
+		<ViewFlipper android:id="@+id/center"
+			android:layout_below="@+id/title" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:id="@+id/artimage" android:layout_height="fill_parent">
+				<RelativeLayout android:layout_width="match_parent"
+					android:id="@+id/playbar" android:layout_height="wrap_content">
+					<com.MP3Player.LayoutTop
+						android:background="#AA000000" android:id="@+id/Bar" android:paddingBottom="8dip" 
+						android:layout_width="match_parent" android:layout_height="wrap_content"></com.MP3Player.LayoutTop>
+				</RelativeLayout>
+				<ImageView android:id="@+id/centerimg"
+					android:layout_above="@+id/bottom" android:layout_below="@+id/playbar"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:scaleType="fitXY" android:src="@drawable/noimage"></ImageView>
+				<RelativeLayout android:visibility="gone"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"
+					android:id="@+id/lyric" android:layout_below="@+id/playbar"
+					android:layout_above="@+id/bottom">
+					<com.MP3Player.LayoutCenter
+						android:layout_width="fill_parent" android:background="#AA000000"
+						android:layout_height="fill_parent"></com.MP3Player.LayoutCenter>
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="fill_parent"
+					android:visibility="gone" android:id="@+id/playlistbar"
+					android:layout_below="@+id/title" android:background="#000000"
+					android:layout_height="fill_parent">
+					<ListView android:id="@id/android:list"
+						android:layout_width="fill_parent" android:layout_height="fill_parent" />
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="match_parent"
+					android:id="@+id/bottom" android:visibility="visible"
+					android:layout_alignParentBottom="true" android:layout_height="wrap_content">
+					<com.MP3Player.LayoutBottom
+						android:background="#AA000000" android:paddingBottom="8dip"
+						android:paddingTop="8dip" android:layout_width="match_parent"
+						android:layout_height="wrap_content"></com.MP3Player.LayoutBottom>
+				</RelativeLayout>
+			</RelativeLayout>
+		</ViewFlipper>
+	</RelativeLayout>
+</merge>

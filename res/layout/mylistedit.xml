@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+		<Button android:layout_height="wrap_content" android:id="@+id/editMusic"
+			android:layout_weight="1" android:text="편집" android:layout_width="wrap_content"></Button>
+		<Button android:layout_height="wrap_content" android:id="@+id/editMusicDelete"
+			android:layout_weight="1" android:text="재생목록 삭제" android:layout_width="wrap_content"></Button>
+		<Button android:layout_height="wrap_content" android:id="@+id/editMusicRandomPlay"
+			 android:layout_weight="1" android:text="임의재생" android:layout_width="wrap_content"></Button>
+	</LinearLayout>
+	<ListView android:id="@+id/mylistedit" android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

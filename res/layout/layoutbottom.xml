@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout android:layout_width="match_parent"
+		android:id="@+id/relativeLayout1" android:layout_height="wrap_content">
+		<ImageButton android:layout_centerInParent="true"
+			android:visibility="visible" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/playpause"
+			android:background="#a0000000" android:src="@drawable/play"></ImageButton>
+		<ImageButton android:layout_toRightOf="@+id/playpause"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/playpause" android:id="@+id/forwardtoend"
+			android:background="#a0000000" android:src="@drawable/playforwardtoend"
+			android:layout_alignTop="@+id/playpause" android:layout_marginLeft="20px"></ImageButton>
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/shuffle" android:background="#a0000000" 
+			android:src="@drawable/shuffle_off" android:layout_toRightOf="@+id/forwardtoend"
+			android:layout_alignTop="@+id/forwardtoend"
+			android:layout_alignBottom="@+id/forwardtoend" android:layout_marginLeft="30px"></ImageButton>
+		<ImageButton android:layout_toLeftOf="@+id/playpause"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/playpause" android:id="@+id/rewindtostart"
+			android:background="#a0000000" android:src="@drawable/playrewindtostart"
+			android:layout_alignTop="@+id/playpause" android:layout_marginRight="20px"></ImageButton>
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/playmode"
+			android:background="#a0000000" android:src="@drawable/refresh"
+			android:layout_toLeftOf="@+id/rewindtostart" android:layout_alignTop="@+id/rewindtostart"
+			android:layout_alignBottom="@+id/rewindtostart" android:layout_marginRight="30px"></ImageButton>
+	</RelativeLayout>
+</LinearLayout>

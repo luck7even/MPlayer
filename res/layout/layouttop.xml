@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<TextView android:layout_width="wrap_content" android:id="@+id/all"
+		android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+		android:text="/"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/start"
+		android:layout_toLeftOf="@+id/all" android:layout_alignTop="@+id/all"
+		android:layout_alignBottom="@+id/all"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/end"
+		android:layout_toRightOf="@+id/all" android:layout_alignTop="@+id/all"
+		android:layout_alignBottom="@+id/all"></TextView>
+	<SeekBar android:id="@+id/playingBar" android:layout_height="wrap_content"
+		android:max="100" android:layout_below="@+id/all"
+		android:layout_width="200px" android:thumb="@drawable/thumb_transparent"
+		android:layout_centerInParent="true"></SeekBar>
+	<TextView android:text="00:00" android:layout_width="wrap_content"
+		android:id="@+id/remaintime" android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/playingBar" android:layout_alignTop="@+id/playingBar"
+		android:layout_alignBottom="@+id/playingBar"
+		android:layout_marginLeft="10px"></TextView>
+	<TextView android:text="00:00" android:layout_width="wrap_content"
+		android:id="@+id/playtime" android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/playingBar" android:layout_alignTop="@+id/playingBar"
+		android:layout_alignBottom="@+id/playingBar"
+		android:layout_marginRight="10px"></TextView>
+</RelativeLayout>

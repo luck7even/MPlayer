@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/background" android:orientation="vertical"
+	android:layout_height="fill_parent">
+	<TextView android:text="Ver 1.0" android:textAppearance="?android:attr/textAppearanceSmall"
+		android:id="@+id/version" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+		 android:layout_alignParentRight="true" android:padding="10px"></TextView>
+</RelativeLayout>

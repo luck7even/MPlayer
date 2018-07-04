@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="6dip">
+	<ImageView android:id="@+id/folder" android:layout_width="50px"
+		android:layout_height="50px" android:scaleType="fitXY" android:src="@drawable/folder_music"></ImageView>
+	<TextView android:id="@+id/group_text" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_vertical"
+		android:layout_toRightOf="@id/folder" android:paddingLeft="5px"
+		android:textSize="20px"></TextView>
+	<TextView android:id="@+id/group_size" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/folder"
+		android:layout_below="@id/group_text" android:paddingLeft="5px"
+		android:textSize="15px"></TextView>
+</RelativeLayout>

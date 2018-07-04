@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="6dip">
+	<ImageView android:id="@+id/addAlbum" android:layout_width="50px"
+		android:layout_height="50px" android:scaleType="fitXY" android:src="@drawable/noimageicon"></ImageView>
+	<CheckBox android:id="@+id/addCheck" android:layout_width="50px"
+		android:layout_height="50px" android:scaleType="fitXY"
+		android:layout_alignParentRight="true"></CheckBox>
+	<TextView android:id="@+id/addArtist" android:layout_width="fill_parent"
+		android:layout_toLeftOf="@id/addCheck" android:layout_height="wrap_content"
+		android:gravity="center_vertical" android:layout_toRightOf="@id/addAlbum"
+		android:paddingLeft="5px" android:textSize="20px"></TextView>
+	<TextView android:id="@+id/addTitle" android:layout_width="fill_parent"
+		android:layout_toLeftOf="@id/addCheck" android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/addAlbum" android:layout_below="@id/addArtist"
+		android:paddingLeft="5px" android:textSize="15px"></TextView>
+</RelativeLayout>
