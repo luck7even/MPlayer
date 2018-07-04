@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="setting_activity_top_title"
+	android:title="환경설정 - MP3Player" xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="DriveMode"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:title="일반">
+		<CheckBoxPreference android:key="check_Accelometer"
+			android:title="흔들어서 랜덤재생" android:selectable="true"
+			android:defaultValue="true" android:summary="가속도 센서를 이용하여,재생중일때 랜덤으로  곡이 선정됩니다." />
+		<ListPreference android:key="SleepTime" android:title="취침예약"
+			android:summary="시간설정후 자동으로 종료합니다." android:entries="@array/sleep_time"
+			android:entryValues="@array/sleepValues_time" android:defaultValue="0" />
+	</PreferenceCategory>
+	<PreferenceCategory xmlns:android="http://schemas.android.com/apk/res/android"
+		android:key="EQMode" android:title="EQ">
+		<CheckBoxPreference android:key="bassBoost"
+			android:title="BassBoost"
+			android:summary="저음소리를 증폭하는 음향효과를 설정합니다." />
+		<CheckBoxPreference android:key="virtualizer"
+			android:title="Virtualizer"
+			android:summary="오디오채널 음향효과를 설정합니다." />
+		<ListPreference android:key="setting_EQ" android:title="Equalizer"
+			android:summary="음의 주파수를 조절하여 음역대마다 음향효과를 설정합니다."
+			android:entries="@array/eq" android:entryValues="@array/eq_value"
+			android:defaultValue="0" />
+	</PreferenceCategory>
+</PreferenceScreen>
+	
