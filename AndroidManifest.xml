@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.MP3Player" android:versionCode="1" android:versionName="1.0">
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+	<application android:theme="@android:style/Theme.NoTitleBar"
+		android:icon="@drawable/icon" android:label="MPlayer">
+		<activity android:screenOrientation="portrait" android:name="SplashScreenActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="MP3PlayerActivity"></activity>
+		<activity android:name="MyPreference"></activity>
+		<activity android:name="MyList"></activity>
+		<activity android:name="MyAlbum"></activity>
+		<activity android:name="MP3PlayerTab"></activity>
+		<activity android:name="MyFolder"></activity>
+		<activity android:name="MyPreference_EQ"></activity>
+		<activity android:name="PopluarMusic"></activity>
+		<activity android:name="NowPlaying"></activity>
+		<activity android:name="MyListMusic"></activity>
+		<activity android:name="MyListEdit"></activity>
+		<activity android:name="MP3FileView"></activity>
+	</application>
+</manifest>
